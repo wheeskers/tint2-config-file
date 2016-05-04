@@ -3,34 +3,39 @@
 # Background definitions
 # ID 1 (panel)
 rounded = 0
-border_width = 0
-background_color = #384b4c 100
-border_color = #384b4c 25
+border_width = 0 
+background_color = #212024 100
 
 # ID 2 (active task)
 rounded = 0
-border_width = 1
-background_color = #FFC03F 100
-border_color = #4F6364 100
+border_width = 0
+background_color = #009047 100
+background_color_hover = #009047 80
 
 # ID 3 (alerts)
 rounded = 0
-border_width = 1
-background_color = #FFDF3F 100
-border_color = #4F6364 100
+border_width = 0
+background_color = #D2FA00 100
+background_color_hover = #D2FA00 80
 
 # ID 4 (tasks)
-rounded = 0
-border_width = 1
-background_color = #586b6c 100
-border_color = #4F6364 100
+rounded = 0 
+border_width = 0
+background_color = #7D7D7D 100
+background_color_hover = #7D7D7D 80
+
+# ID 5 (iconified tasks)
+rounded = 0 
+border_width = 0
+background_color = #313034 100
+background_color_hover = #313034 80
 
 # Panel
 panel_monitor = all
 panel_position = bottom center horizontal
-panel_size = 100% 24
+panel_size = 100% 25
 panel_margin = 0 0
-panel_padding = 5 0 0
+panel_padding = 0 0 0
 panel_dock = 0
 wm_menu = 1
 panel_layer = top
@@ -45,21 +50,22 @@ strut_policy = follow_size
 
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_padding = 1 0 0
+taskbar_padding = 1 1 1 #space around task buttons
 taskbar_background_id = 1
 taskbar_active_background_id = 1
+taskbar_sort_order = none
 
 # Tasks
 urgent_nb_of_blink = 10
 task_icon = 0
 task_text = 1
 task_centered = 0
-task_maximum_size = 200 40
-task_padding = 10 10
+task_maximum_size = 200 24
+task_padding = 10 10 10
 task_background_id = 4
 task_active_background_id = 2
 task_urgent_background_id = 3
-task_iconified_background_id = 1
+task_iconified_background_id = 5
 
 # Task Icons (defaults)
 task_icon_asb = 70 0 0
@@ -68,16 +74,16 @@ task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 70 0 0
 
 # Fonts
-task_font = Roboto 10
-task_font_color = #dcdcdc 100
-task_active_font_color = #000000 83
-task_urgent_font_color = #000000 83
-task_iconified_font_color = #FFFFFF 68
+task_font = Liberation Sans 10
+task_font_color = #0B0B0B 100
+task_active_font_color = #00170B 100
+task_urgent_font_color = #000000 75
+task_iconified_font_color = #FFFFFF 40
 font_shadow = 0
 
 # System Tray
 systray = 1
-systray_padding = 1 1 0
+systray_padding = 1 1 5
 systray_sort = ascending
 systray_background_id = 1
 systray_icon_size = 20
@@ -85,11 +91,11 @@ systray_icon_asb = 95 0 0
 
 # Clock
 time1_format = %H:%M
-time1_font = Roboto 12
+time1_font = Liberation Sans 12
 #time2_format = %A %d %B
 #time2_font = Terminus 8
 clock_font_color = #cccccc 74
-clock_padding = 1 1
+clock_padding = 5 5
 clock_background_id = 1
 clock_rclick_command = orage
 
