@@ -9,8 +9,8 @@ background_color = #212024 100
 # ID 2 (active task)
 rounded = 0
 border_width = 0
-background_color = #009047 100
-background_color_hover = #009047 80
+background_color = #11AE5E 100
+background_color_hover = #11AE5E 80
 
 # ID 3 (alerts)
 rounded = 0
